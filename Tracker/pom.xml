@@ -143,24 +143,14 @@
                 <artifactId>maven-war-plugin</artifactId>
                    <version>2.0.2</version>
                 <configuration>
-                    <warName>simple-spring-app</warName>
+                    <warName>tracker</warName>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.0.2</version>
                 <configuration>
-                    <webResources>
-                        <resource>
-                            <targetPath>WEB-INF</targetPath>
-                            <directory>src/main/webapp/WEB-INF</directory>
-                            <filtering>true</filtering>
-                            <includes>
-                                <include>*.xml</include>
-                            </includes>
-                        </resource>
-                    </webResources>
+                    <warName>tracker</warName>
                 </configuration>
             </plugin>
             
