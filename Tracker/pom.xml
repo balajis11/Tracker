@@ -148,7 +148,7 @@
                     <webResources>
                         <resource>
                             <targetPath>WEB-INF</targetPath>
-                            <directory>WebContent/WEB-INFF</directory>
+                            <directory>WebContent/WEB-INF</directory>
                             <filtering>true</filtering>
                             <includes>
                                 <include>*.xml</include>
