@@ -145,7 +145,8 @@
                 <version>2.0.2</version>
                 <configuration>
                     <warName>Tracker</warName>
-                   
+                    <webXml>WebContent/WEB-INF/web.xml</webXml>
+
                 </configuration>
             </plugin>
             
