@@ -3,4 +3,6 @@ jdk:
   - oraclejdk7
   - openjdk7
   
-script: mvn install -DskipTests=true
+script: mvn install -DskipTests=true -B -V --quiet && cd cloudfoundry-client-lib && mvn -P integration-test clean install -Dccng.target=api.run.pivotal.io
+  -Dccng.email=balaji_mejastic@yahoo.com -Dccng.passwd=Balaji11 -Dccng.org=$DeviceTracking -Dccng.space=development -Dsurefire.useFile=false --quiet
+
