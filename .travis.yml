@@ -3,4 +3,4 @@ jdk:
   - oraclejdk7
   - openjdk7
   
-script: mvn clean install -DskipTests=true 
+script: mvn clean install -DskipTests=truecf push -f ./deploy/cloudfoundry/manifest.yml -p target/*.war
