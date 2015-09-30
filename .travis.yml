@@ -3,7 +3,7 @@ jdk:
   - oraclejdk7
   - openjdk7
   
-script: mvn clean install -DskipTests=true -Dccng.target=api.run.pivotal.io
+script: mvn clean install -DskipTests=true && mvn -P integration-test clean install -Dccng.target=api.run.pivotal.io
   -Dccng.email=balaji_mejastic@yahoo.com -Dccng.passwd=Balaji11 -Dccng.org=$DeviceTracking -Dccng.space=development -Dsurefire.useFile=false --quiet
   
   env:
